@@ -9,13 +9,13 @@
 ### Summary
 **Goals**
 * Professional growth;
-* Mastering in JavaScript further while working in a good company;
-* Mastering in Programming Algorithms;
-* Improving English language verbal skills through regular practice ( translating manuals, writing reviews, etc );
+* Mastering in JavaScript, both Core JS and frameworks, while working in a good stable company;
+* Mastering in [Algorithms](https://vk.com/doc2036633_461668315?hash=3bbe2d53fdb5bac884&dl=973c79ffecb29ce1a0);
+* Improving English language verbal skills through regular practice ( translating manuals, writing reviews, customers negotiating, and so on&hellip; );
 
 ### Skills
 * Programming languages: JavaScript / TypeScript, some PHP ( Drupal 7.x ), basic Git Markdown
-* Frameworks: jQuery ( previously ), Angular 
+* Frameworks: [jQuery](https://api.jquery.com/) ( previously ), [Angular](https://angular.io/docs) 
 * Methodologies: [BEM](https://en.bem.info/methodology/)
 * Tools : [Git](https://git-scm.com/download/), [VSCode](https://code.visualstudio.com/download), [OSPanel](https://ospanel.io/download/)
 
