@@ -1,2 +1,2 @@
 # rsschool-cv
-[Curriculum Vitae](/cv.md)
+[Curriculum Vitae](https://github.com/ValentinVorobiov/rsschool-cv/cv.md)
