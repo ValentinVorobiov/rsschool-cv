@@ -149,6 +149,11 @@
     <summary> HTML / CSS From Scratch Certificate </summary>
 
     ![HTML Form Scratch](https://udemy-certificate.s3.amazonaws.com/image/UC-0TVCEGDX.jpg)
+    </details>
+    <details>
+    <summary> Basics of HTML5 & CSS3 Certificate </summary>
+
+    ![Basics of HTML5 & CSS3](https://udemy-certificate.s3.amazonaws.com/image/UC-55EGZO6E.jpg)
     </details> 
 * EPAM Front End October 2018 ( **FE 2018-2** )
 
