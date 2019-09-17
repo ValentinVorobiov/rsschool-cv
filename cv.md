@@ -145,17 +145,8 @@
 * [CodeWars](https://www.codewars.com/users/QelDroma82) Kata's
 * [(RU) HTMLAcademy](https://htmlacademy.ru/profile/id1188429)  HTML / CSS Free Blocks
 * [Udemy](https://www.udemy.com/user/valiantsin-varabyou/) 
-    <details>
-    <summary> HTML / CSS From Scratch Certificate </summary>
-
-    ![HTML Form Scratch](https://udemy-certificate.s3.amazonaws.com/image/UC-0TVCEGDX.jpg)
-    </details>
-
-    <details>
-    <summary> Basics of HTML5 & CSS3 Certificate </summary>
-
-    ![Basics of HTML5 & CSS3](https://udemy-certificate.s3.amazonaws.com/image/UC-55EGZO6E.jpg)
-    </details> 
+    * [HTML / CSS From Scratch Certificate](https://udemy-certificate.s3.amazonaws.com/image/UC-0TVCEGDX.jpg)
+    * [Basics of HTML5 & CSS3](https://udemy-certificate.s3.amazonaws.com/image/UC-55EGZO6E.jpg)
 * EPAM Front End October 2018 ( **FE 2018-2** )
 
 ### English Level
