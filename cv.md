@@ -26,29 +26,31 @@
 <summary> Expand / Collapse </summary>
     <p>
 
-    ```
-    function true_binary( n ){
-        let max2Power = Math.floor( Math.log2( n ) );
-        console.log( 'Maximum 2 power:' , max2Power ) ;
-        let currRemnant = n; let currPower = max2Power;
-        let currAdd ; 
-        let arrTrueBinary = [];
+  ```javascript
 
-        for( i=max2Power; i>=0 && currRemnant !== 0 ; i-- ){
-            currPower = i;
-            currAdd = Math.floor( Math.pow( 2, currPower ) ); 
-            if( currRemnant > 0 ){
-                currRemnant = currRemnant - currAdd;
-                arrTrueBinary = [ ...arrTrueBinary, 1 ] ;
-            } else {
-                currRemnant = currRemnant + currAdd;
-                arrTrueBinary = [ ...arrTrueBinary, -1 ];
-            }
+  function true_binary( n ){
+      let max2Power = Math.floor( Math.log2( n ) );
+      console.log( 'Maximum 2 power:' , max2Power ) ;
+      let currRemnant = n; let currPower = max2Power;
+      let currAdd ; 
+      let arrTrueBinary = [];
+
+      for( i=max2Power; i>=0 && currRemnant !== 0 ; i-- ){
+        currPower = i;
+        currAdd = Math.floor( Math.pow( 2, currPower ) ); 
+        if( currRemnant > 0 ){
+          currRemnant = currRemnant - currAdd;
+          arrTrueBinary = [ ...arrTrueBinary, 1 ] ;
+          } else {
+          currRemnant = currRemnant + currAdd;
+          arrTrueBinary = [ ...arrTrueBinary, -1 ];
         }
+      }
 
-        return arrTrueBinary;
-    }
-    ```
+    return arrTrueBinary;
+  }
+
+  ```
 
     </p>
 
@@ -61,48 +63,49 @@
 <summary> Expand / Collapse </summary>
     <p>
 
-    ```
-    function bs_phone_field_formatter_info() {
-        return array(
+  ```php
 
-            'bs_phone_formatter_tel' => array(
-                'label' => t('Tel: Link'),
-                'field types' => array( 'text' ),
-                'settings' => array(
-                    'formatter' => 'phone_tel',
-                    'link_alt' => 'null',
-                    'link_title' => 'null',
-                    'use_fontawesome' => FALSE,
-                )
-            ),
+  function bs_phone_field_formatter_info() {
+    return array(
+      'bs_phone_formatter_tel' => array(
+        'label' => t('Tel: Link'),
+        'field types' => array( 'text' ),
+        'settings' => array(
+          'formatter' => 'phone_tel',
+          'link_alt' => 'null',
+          'link_title' => 'null',
+          'use_fontawesome' => FALSE,
+        )
+      ),
 
-            'bs_phone_formatter_viber' => array(
-                'label' => t('Viber Link'),
-                'field types' => array( 'text' ),
-                'settings' => array(
-                    'formatter' => 'phone_viber',
-                    'link_alt' => 'null',
-                    'link_title' => 'null',
-                    'use_fontawesome' => FALSE,
-                )
-            ),
+      'bs_phone_formatter_viber' => array(
+        'label' => t('Viber Link'),
+        'field types' => array( 'text' ),
+        'settings' => array(
+          'formatter' => 'phone_viber',
+          'link_alt' => 'null',
+          'link_title' => 'null',
+          'use_fontawesome' => FALSE,
+        )
+      ),
 
-            'bs_phone_formatter_whatsapp' => array(
-                'label' => t('WhatsApp Link'),
-                'field types' => array( 'text' ),
-                'settings' => array(
-                    'formatter' => 'phone_whatsapp',
-                    'link_alt' => 'null',
-                    'link_title' => 'null',
-                    'use_fontawesome' => FALSE,
-                )
-            ),
+      'bs_phone_formatter_whatsapp' => array(
+        'label' => t('WhatsApp Link'),
+        'field types' => array( 'text' ),
+        'settings' => array(
+          'formatter' => 'phone_whatsapp',
+          'link_alt' => 'null',
+          'link_title' => 'null',
+          'use_fontawesome' => FALSE,
+        )
+      ),
 
-        );
-    }
-    ```
+    );
+  }
 
-    </p>
+  ```
+
+  </p>
 
 </details>
 
@@ -114,19 +117,20 @@
 <summary> Expand / Collapse </summary>
 
 <p>
-    ```
 
-    public aclsInList( aCurrency : Currency ):boolean{
-        let retRes: boolean = false;
-            for ( let j:number =0; j<this.clsChartedCurrencies.length && retRes == false; j++){
-                if(  this.clsChartedCurrencies[ j ].ccCurrency.cID == aCurrency.cID ){
-                    retRes = true;
-                }
-            }
-        return retRes;
-    }
+  ```javascript
 
-    ```
+  public aclsInList( aCurrency : Currency ):boolean{
+    let retRes: boolean = false;
+      for ( let j:number =0; j<this.clsChartedCurrencies.length && retRes == false; j++){
+        if(  this.clsChartedCurrencies[ j ].ccCurrency.cID == aCurrency.cID ){
+          retRes = true;
+        }
+      }
+    return retRes;
+  }
+
+  ```
 
 </p>
 </details>
