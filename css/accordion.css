@@ -1,0 +1,26 @@
+.accordion-toggler {
+  background-color: #eee;
+  box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box; -o-box-sizing: border-box;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-toggler.active, .accordion-toggler:hover {
+  background-color: #ccc;
+}
+
+.accordion-data {
+  box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box; -o-box-sizing: border-box;
+  padding: 5px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}

@@ -1,0 +1,27 @@
+.page-main-section{
+  padding-top: 0.5rem; padding-bottom: 0.5rem;
+}
+
+.main-section-caption {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+}
+
+
+.page-main-section .main-section-contacts-list{
+  list-style: none;
+  display: flex; flex-flow: row wrap;
+  align-items: center; justify-content: flex-start;
+}
+
+.page-main-section .main-section-contacts-list .contacts-list-contact{
+  margin-right: 0.33rem;
+}
+
+.page-main-section .main-section-contacts-list .contacts-list-contact::after{
+  content: "|";
+}

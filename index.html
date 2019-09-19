@@ -8,9 +8,9 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/common.css">
+      <link rel="stylesheet" type="text/css" href="css/accordion.css">
       <link rel="stylesheet" type="text/css" href="css/page-header.css">
-      <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+      <link rel="stylesheet" type="text/css" href="css/main-section.css">
   </head>
   <body>
 
@@ -27,7 +27,7 @@
           </section>
           <section class="page-header-section page-header-section-info-link">
             <span>
-              <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-cv.md" alt="" title="">Task description</a> itself
+              <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-cv.md" target="blank" alt="" title="">Task description</a> itself
             </span>
           </section>
           <nav class="page-header-navbar navbar" id="navbar">
@@ -82,86 +82,182 @@
           </ul>
 
         </section>
+
         <section class="page-main-section main-section" id="summary">
+
             <div class="main-section-caption"> Summary </div>
             <div class="main-section-caption main-section-subcaption"> Goals </div>
             <ul class="main-section-list main-section-goals-list goals-list">
               <li class="goals-list-goal"> Professional growth; </li>
               <li class="goals-list-goal"> Mastering in JavaScript, both Core JS and frameworks, while working in a good stable company; </li>
-              <li> Mastering in <a href="https://vk.com/doc2036633_461668315?hash=3bbe2d53fdb5bac884&dl=973c79ffecb29ce1a0">Algorithms;</a> </li>
+              <li> Mastering in <a target="blank" href="https://vk.com/doc2036633_461668315?hash=3bbe2d53fdb5bac884&dl=973c79ffecb29ce1a0">Algorithms;</a> </li>
               <li class="goals-list-goal"> Improving English language verbal skills through regular practice ( translating manuals, writing reviews, customers negotiating, and so on… ); </li>
             </ul>
 
         </section>
 
         <section class="page-main-section main-section" id="skills">
-            <p class="main-section-caption"> Skills </p>
+
+          <p class="main-section-caption"> Skills </p>
             <ul class="main-section-list main-section-skills-list skills-list">
               <li class="skills-list-skill">
                  Programming languages: JavaScript / TypeScript, some PHP ( Drupal 7.x ), basic Git Markdown
                 </li>
               <li class="skills-list-skill"> Frameworks:
-                <a href="https://api.jquery.com/">jQuery</a>
+                <a  target="blank" href="https://api.jquery.com/">jQuery</a>
                  ( previously ),
-                 <a href="https://angular.io/docs">Angular 7.x</a>
+                 <a target="blank" href="https://angular.io/docs">Angular 7.x</a>
                 </li>
               <li class="skills-list-skill">
                  Methodologies:
-                <a href="https://en.bem.info/methodology/">BEM</a>
+                <a target="blank" href="https://en.bem.info/methodology/">BEM</a>
               </li>
               <li class="skills-list-skill"> Tools :
-                <a href="https://git-scm.com/download/">Git</a>,
-                <a href="https://code.visualstudio.com/download">VSCode</a>,
-                <a href="https://ospanel.io/download/">OSPanel</a>
+                <a target="blank" href="https://git-scm.com/download/">Git</a>,
+                <a target="blank" href="https://code.visualstudio.com/download">VSCode</a>,
+                <a target="blank" href="https://ospanel.io/download/">OSPanel</a>
               </li>
             </ul>
 
         </section>
+
         <section class="page-main-section main-section" id="code-examples">
-            <p class="main-section-caption main-section-caption"> Latest Code Examples </p>
 
+          <p class="main-section-caption main-section-caption"> Latest Code Examples </p>
+
+          <div class="accordion-toggler"> VanillaJS Example </div>
+          <div class="accordion-data">
+            <pre>
+    function true_binary( n ){
+      let max2Power = Math.floor( Math.log2( n ) );
+      console.log( 'Maximum 2 power:' , max2Power ) ;
+      let currRemnant = n; let currPower = max2Power;
+      let currAdd ;
+      let arrTrueBinary = [];
+
+      for( i=max2Power; i&gt;=0 && currRemnant !== 0 ; i-- ){
+          currPower = i;
+          currAdd = Math.floor( Math.pow( 2, currPower ) );
+          if( currRemnant gt; 0 ){
+              currRemnant = currRemnant - currAdd;
+              arrTrueBinary = [ ...arrTrueBinary, 1 ] ;
+          } else {
+              currRemnant = currRemnant + currAdd;
+              arrTrueBinary = [ ...arrTrueBinary, -1 ];
+          }
+      }
+
+      return arrTrueBinary;
+  }
+            </pre>
+          </div>
+
+          <div class="accordion-toggler"> PHP (Drupal 7 Module) </div>
+          <div class="accordion-data">
+            <pre>
+  function bs_phone_field_formatter_info() {
+    return array(
+
+        'bs_phone_formatter_tel' =&gt; array(
+            'label' =&gt; t('Tel: Link'),
+            'field types' =&gt; array( 'text' ),
+            'settings' =&gt; array(
+                'formatter' =&gt; 'phone_tel',
+                'link_alt' =&gt; 'null',
+                'link_title' =&gt; 'null',
+                'use_fontawesome' =&gt; FALSE,
+            )
+        ),
+
+        'bs_phone_formatter_viber' =&gt; array(
+            'label' =&gt; t('Viber Link'),
+            'field types' =&gt; array( 'text' ),
+            'settings' =&gt; array(
+                'formatter' =&gt; 'phone_viber',
+                'link_alt' =&gt; 'null',
+                'link_title' =&gt; 'null',
+                'use_fontawesome' =&gt; FALSE,
+            )
+        ),
+
+        'bs_phone_formatter_whatsapp' =&gt; array(
+            'label' =&gt; t('WhatsApp Link'),
+            'field types' =&gt; array( 'text' ),
+            'settings' =&gt; array(
+                'formatter' =&gt; 'phone_whatsapp',
+                'link_alt' =&gt; 'null',
+                'link_title' =&gt; 'null',
+                'use_fontawesome' =&gt; FALSE,
+            )
+        ),
+
+    );
+  }
+            </pre>
+          </div>
+
+          <div class="accordion-toggler"> TypeScript (Angular) </div>
+          <div class="accordion-data">
+            <pre>
+  public aclsInList( aCurrency : Currency ):boolean {
+    let retRes: boolean = false;
+        for ( let j:number =0; j&lt;this.clsChartedCurrencies.length && retRes == false; j++){
+            if(  this.clsChartedCurrencies[ j ].ccCurrency.cID == aCurrency.cID ){
+                retRes = true;
+            }
+        }
+    return retRes;
+  }
+            </pre>
+          </div>
 
         </section>
+
         <section class="page-main-section main-section" id="experience">
-            <p class="main-section-caption main-section-caption"> Experience </p>
-            <ul class="main-section-list main-section-experience-list experience-list">
-                <li class="expreience-list-item">
-                    <a href="https://github.com/ValentinVorobiov/CurrencyExchange.git" alt="Simple Angular App" title="Simple Angular App">
-                        Currency Exchange App (Angular)
-                    </a>
-                </li>
-                <li class="expreience-list-item">
-                    <a href="https://stalgrad67.ru/" alt="One of my Drupal 7 sites" title="One of my Drupal 7 sites">
-                        Yet Another Drupal 7.x site
-                    </a>
-                </li>
-            </ul>
+
+          <p class="main-section-caption main-section-caption"> Experience </p>
+          <ul class="main-section-list main-section-experience-list experience-list">
+              <li class="expreience-list-item">
+                  <a target="blank" href="https://github.com/ValentinVorobiov/CurrencyExchange.git" alt="Simple Angular App" title="Simple Angular App">
+                      Currency Exchange App (Angular)
+                  </a>
+              </li>
+              <li class="expreience-list-item">
+                  <a target="blank" href="https://stalgrad67.ru/" alt="One of my Drupal 7 sites" title="One of my Drupal 7 sites">
+                      Yet Another Drupal 7.x site
+                  </a>
+              </li>
+          </ul>
 
         </section>
+
         <section class="page-main-section main-section" id="education">
+
             <p class="main-section-caption main-section-caption"> Education </p>
             <ul class="main-section-list main-section-education-list education-list">
               <li class="education-list-item">
-                <a href="https://www.codewars.com/users/QelDroma82">CodeWars</a> Kata’s
+                <a target="blank" href="https://www.codewars.com/users/QelDroma82">CodeWars</a> Kata’s
               </li>
               <li class="education-list-item">
-                <a href="https://htmlacademy.ru/profile/id1188429">(RU) HTMLAcademy</a> HTML / CSS Free Blocks
+                <a target="blank" href="https://htmlacademy.ru/profile/id1188429">(RU) HTMLAcademy</a> HTML / CSS Free Blocks
               </li>
               <li class="education-list-item">
-                  <a href="https://www.udemy.com/user/valiantsin-varabyou/">Udemy</a>
+                  <a target="blank" href="https://www.udemy.com/user/valiantsin-varabyou/">Udemy</a>
+
                   <ul class="main-section-sublist education-list-sublist education-sublist">
                     <li class="education-sublist-item">
-                        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-0TVCEGDX.jpg" target="blank">
+                        <a target="blank" href="https://udemy-certificate.s3.amazonaws.com/image/UC-0TVCEGDX.jpg">
                           HTML / CSS From Scratch Certificate
                         </a>
                     </li>
                     <li class="education-sublist-item">
-                        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-55EGZO6E.jpg" target="blank">
+                        <a target="blank" href="https://udemy-certificate.s3.amazonaws.com/image/UC-55EGZO6E.jpg">
                           Basics of HTML5 &amp; CSS3 Certificate
                         </a>
                     </li>
                     <li class="education-sublist-item hidden"> &nbsp; </li>
                   </ul>
+
               </li>
               <li class="education-list-item">
                   EPAM Front End October 2018 ( <strong>FE 2018-2</strong> )
@@ -170,15 +266,20 @@
             </ul>
 
         </section>
+
         <section class="page-main-section main-section" id="languages">
+
           <p class="main-section-caption main-section-caption"> Languages </p>
-            <ul class="main-section-languages-list languages-list">
+            <ul class="main-section-list main-section-languages-list languages-list">
               <li class="languages-list-item">
                   Last Test Result: B2 on <a href="https://examinator.lab.epam.com">EPAM Exam Lab</a>
               </li>
             </ul>
+
         </section>
+
       </main>
+
       <footer class="page-footer">
         <section class="page-footer-section footer-section">
 
@@ -190,8 +291,26 @@
 
         </section>
       </footer>
+
     </div>
 
   </body>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+  <script type="text/javascript">
+    let accordions = document.getElementsByClassName( 'accordion-toggler' );
+    console.log( 'accordions list: \n', accordions );
+    for( let i=0; i<accordions.length; i++ ){
+      let accordionToggler = accordions[ i ];
+      accordionToggler.addEventListener( 'click' , function(){
+        let accordionData = accordionToggler.nextElementSibling;
+        console.log( 'accordionData : ', accordionData );
+        this.classList.toggle( 'active' );
+        if( accordionData.style.display === 'block' ){
+          accordionData.style.display = 'none';
+        } else{
+          accordionData.style.display = 'block';
+        }
+
+      } );
+    }
+  </script>
 </html>
