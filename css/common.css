@@ -1,11 +1,40 @@
-body{
+body {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+a:link, a:visited, a:focus, a:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  text-decoration-color: #0366d6;
+  /* outline: auto 0.8px rgb(77, 144, 254); */
+}
+
+a:focus {
+  outline: auto 0.8px rgb(77, 144, 254);
 }
 
 .page-wrapper{
   width: 100%;
   max-width: 1024px;
   margin-left: auto; margin-right: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+ul.main-section-list {
+  list-style: inside disc;
+  padding-left: 2em;
+}
+
+ul.main-section-sublist {
+  list-style: inside circle;
+  padding-left: 2em;
 }
