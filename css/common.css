@@ -1,0 +1,68 @@
+body {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+pre, code{
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+}
+
+a:link, a:visited, a:focus, a:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #3b3a3c;
+  text-decoration-color: #3b3a3c;
+}
+
+a:focus {
+  outline: auto 0.8px rgb(77, 144, 254);
+}
+
+a.valuable:link, a.valuable:visited, a.valuable:focus, a.valuable:hover{
+  text-decoration: underline double;
+  font-weight: 600;
+}
+
+a.valuable:hover, a.valuable:focus{
+  color: #3b3a3c;
+  text-decoration-color: #3b3a3c;
+}
+
+.page-wrapper{
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto; margin-right: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+ul.main-section-list {
+  list-style: inside disc;
+  padding-left: 2em;
+}
+
+ul.main-section-list > li {
+  margin-bottom: 0.45rem;
+}
+
+ul.main-section-sublist {
+  list-style: inside circle;
+  padding-left: 2em;
+}
+
+ul.main-section-sublist > li {
+  margin-bottom: 0.25rem;
+}
