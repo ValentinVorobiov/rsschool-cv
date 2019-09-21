@@ -24,9 +24,7 @@
 **Vanilla JS**
 <details>
 <summary> Expand / Collapse </summary>
-    <p>
-
-  ```javascript
+    <pre>
 
   function true_binary( n ){
       let max2Power = Math.floor( Math.log2( n ) );
@@ -50,9 +48,7 @@
     return arrTrueBinary;
   }
 
-  ```
-
-    </p>
+    </pre>
 
 </details>
 <br />
@@ -61,9 +57,7 @@
 **PHP** ( Drupal 7 Module )
 <details>
 <summary> Expand / Collapse </summary>
-    <p>
-
-  ```php
+    <pre>
 
   function bs_phone_field_formatter_info() {
     return array(
@@ -103,9 +97,7 @@
     );
   }
 
-  ```
-
-  </p>
+</pre>
 
 </details>
 
@@ -116,9 +108,7 @@
 <details>
 <summary> Expand / Collapse </summary>
 
-<p>
-
-  ```javascript
+<pre>
 
   public aclsInList( aCurrency : Currency ):boolean{
     let retRes: boolean = false;
@@ -130,9 +120,7 @@
     return retRes;
   }
 
-  ```
-
-</p>
+</pre>
 </details>
 
 <br />
