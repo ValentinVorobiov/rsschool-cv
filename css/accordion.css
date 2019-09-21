@@ -1,0 +1,43 @@
+.accordion-toggler, .main-section-accordion-toggler {
+  background-color: #cbccce;
+  position: relative;
+  box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box; -o-box-sizing: border-box;
+  color: #3b3a3c;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-toggler:not(.active)::after,
+.main-section-accordion-toggler:not(.active)::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-toggler.active::after,
+.main-section-accordion-toggler.active::after {
+  content: "—";
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-toggler.active, .accordion-toggler:hover,
+.main-section-accordion-toggler.active, .main-section-accordion-toggler:hover {
+  background-color: #3b3a3c;
+  color: #cbccce;
+}
+
+.accordion-data, .main-section-accordion-data {
+  box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box; -o-box-sizing: border-box;
+  padding: 5px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
